@@ -12,7 +12,7 @@ const csvTojson=(filename='customer-data.csv')=>{
 			};
 		var jsonDataini=csvjson.toSchemaObject(data,options);
 		var jsonData=JSON.stringify(jsonDataini,null,2);
-		console.log(jsonData);
+		//console.log(jsonData);
 		callback(jsonData);
 		}
 	let writeFile=uuidv1();
